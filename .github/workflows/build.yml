@@ -128,6 +128,7 @@ jobs:
           - orangepi-3b
           - orangepi-5
           - orangepi-5-max
+          - orangepi-5-ultra
           - orangepi-5-plus
           - orangepi-5-pro
           - orangepi-5b
