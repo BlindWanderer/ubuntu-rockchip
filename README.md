@@ -17,11 +17,31 @@ Ubuntu Rockchip is a community project porting Ubuntu to Rockchip hardware with 
 * Chromium browser with smooth 4k youtube video playback
 * MPV video player capable of smooth 4k video playback
 
+## Building on Ubuntu 24.04
+
+You need to install some required packages first and if you don't here is how you recover.
+
+Don't try running the build script until you install everything. 
+
+### Required packages:
+sudo apt install -y build-essential gcc-aarch64-linux-gnu bison qemu-user-static qemu-system-arm qemu-efi u-boot-tools binfmt-support debootstrap flex libssl-dev bc rsync kmod cpio xz-utils fakeroot parted udev dosfstools uuid-runtime git-lfs device-tree-compiler python2 python3 python-is-python3 fdisk bc debhelper python3-pyelftools python3-setuptools python3-distutils python3-pkg-resources swig libfdt-dev libpython3-dev dctrl-tools dpkg-dev git gcc dpkg-cross libelf-dev
+
+### It went wrong...
+
+If you halt the script early or it fails...
+
+* It may leave the build directory in a bad state. The easy solution is to delete it.
+* It may leave your system in a bad state. The easy solution is to power cycle.
+
 ## Installation
 
 Make sure you use a good, reliable, and fast SD card. For example, suppose you encounter boot or stability troubles. Most of the time, this is due to either an insufficient power supply or related to your SD card (bad card, bad card reader, something went wrong when burning the image, or the card is too slow).
 
 Download the Ubuntu image for your specific board from the latest [release](https://github.com/Joshua-Riek/ubuntu-rockchip/releases) on GitHub or from the dedicated download [website](https://joshua-riek.github.io/ubuntu-rockchip-download/). Then write the xz compressed image (no previous unpacking necessary) to your SD card using [USBimager](https://bztsrc.gitlab.io/usbimager/) or [balenaEtcher](https://www.balena.io/etcher) since, unlike other tools, these can validate burning results, saving you from corrupted SD card contents.
+
+### Ubuntu 24.04 Desktop
+
+Just double click the .xz file and it will be opened by Disk. Disk will ofter to burn it to a disk. After burning you can resize the partition to fill the disk.
 
 ## Boot the System
 
