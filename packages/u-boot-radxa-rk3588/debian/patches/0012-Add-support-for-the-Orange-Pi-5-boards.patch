@@ -191,7 +191,6 @@ index 00000000000..4b4619a321c
 +};
 diff --git a/arch/arm/dts/rk3588-orangepi-5-ultra.dts b/arch/arm/dts/rk3588-orangepi-5-ultra.dts
 new file mode 100644
-index 00000000000..4b4619a321c
 --- /dev/null
 +++ b/arch/arm/dts/rk3588-orangepi-5-ultra.dts
 @@ -0,0 +1,145 @@
@@ -1380,7 +1379,6 @@ index 00000000000..bcc1bb1dae1
 \ No newline at end of file
 diff --git a/configs/orangepi-5-ultra-rk3588_defconfig b/configs/orangepi-5-ultra-rk3588_defconfig
 new file mode 100644
-index 00000000000..bcc1bb1dae1
 --- /dev/null
 +++ b/configs/orangepi-5-ultra-rk3588_defconfig
 @@ -0,0 +1,257 @@
